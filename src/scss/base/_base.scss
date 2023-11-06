@@ -1,3 +1,28 @@
+$base-text-color: #fff;
+
+//breakpoints
+
+/*Tablet*/
+@mixin tablet {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+/*Mobile*/
+@mixin mobile {
+  @media screen and (max-width: 899px) {
+    @content;
+  }
+}
+
+/*Mobile XS*/
+@mixin mobile-s {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +40,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  font-family: $ptsans;
+  font-weight: 400;
+  color: $base-text-color;
 }
 .noscroll {
   overflow: hidden;
@@ -25,6 +53,11 @@ body {
 
 main {
   flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
 }
 
 a,
@@ -42,13 +75,13 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   padding: 0;
   margin: 0;
 }
-figure {
-  margin: 0;
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -89,5 +122,17 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
 .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.svg-down {
+  width: 24px;
+  height: 24px;
 }

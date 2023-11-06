@@ -2,5 +2,9 @@
 @import "base/_base";
 
 //sections
- @import "sections/header";
- @import "sections/footer";
+@import "sections/header";
+@import "sections/footer";
+
+// blocks
+@import "blocks/logo";
+@import "blocks/burger";
