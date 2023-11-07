@@ -1,0 +1,48 @@
+$light-color: #fff;
+$active-color: #265847;
+
+.header-nav {
+  font-size: 22px;
+
+  &__list {
+    gap: 70px;
+
+    @include tablet {
+      font-size: 30px;
+      padding: 15px 30px 40px;
+      color: $light-color;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      background-color: #265847;
+      width: 100%;
+    }
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    z-index: 10;
+
+    width: 100%;
+
+    background-color: rgba(38, 89, 72, 0.8);
+    transform: translateX(110%);
+    transition: 0.3s;
+  }
+}
+
+.header-nav.header-nav--active {
+  transform: translateX(0);
+}

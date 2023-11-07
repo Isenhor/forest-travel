@@ -9,6 +9,11 @@ $header-bgc: #265847;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  /*Tablet*/
+  @include tablet {
+    height: 591px;
+  }
 }
 
 .header-top {
@@ -16,13 +21,21 @@ $header-bgc: #265847;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-}
 
-.header-nav {
-  font-size: 22px;
-  font-weight: 400;
-  &__list {
-    gap: 50px;
+  /*Tablet*/
+  @include tablet {
+    width: 900px;
+    padding: 0 15px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 600px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 100%;
   }
 }
 
@@ -38,14 +51,55 @@ $header-bgc: #265847;
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
+
+    /*Tablet*/
+    @include tablet {
+      font-size: 52px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      font-size: 42px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      font-size: 32px;
+    }
   }
 
   &__descr {
     font-size: 24px;
+
+    /*Mobile*/
+    @include mobile {
+      font-size: 20px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      font-size: 18px;
+    }
   }
 
   &__descr + &__descr {
-    margin-top: 1em;
+    margin-top: 10px;
+  }
+
+  /*Tablet*/
+  @include tablet {
+    width: 900px;
+    padding: 0 15px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 600px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 320px;
   }
 }
 
@@ -69,5 +123,9 @@ $header-bgc: #265847;
     bottom: 0;
     transform: translateX(-50%);
     background-image: url("../img/icons/arrow-down.svg");
+  }
+
+  @include tablet {
+    font-size: 0;
   }
 }

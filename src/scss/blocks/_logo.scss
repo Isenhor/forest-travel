@@ -2,5 +2,9 @@
   font-family: $lobster;
   color: $base-text-color;
   font-size: 40px;
-  font-weight: 400;
+
+  /*Mobile XS*/
+  @include mobile-s {
+    font-size: 30px;
+  }
 }

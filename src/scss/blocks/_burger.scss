@@ -3,6 +3,7 @@ $height: 25px;
 $barWidth: 40px;
 $barHeight: 5px;
 $barColor: #fff;
+$barColorActive: #265847;
 
 .burger {
   position: relative;
@@ -52,11 +53,13 @@ $barColor: #fff;
     &::before {
       top: 0;
       transform: rotate(-135deg);
+      background-color: $barColor;
     }
 
     &::after {
       top: 0;
       transform: rotate(135deg);
+      background-color: $barColor;
     }
   }
 }

@@ -126,6 +126,21 @@ select:-webkit-autofill:focus {
 .container {
   width: 1170px;
   margin: 0 auto;
+
+  /*Tablet*/
+  @include tablet {
+    width: 900px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 600px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 320px;
+  }
 }
 
 .flex {
@@ -135,4 +150,20 @@ select:-webkit-autofill:focus {
 .svg-down {
   width: 24px;
   height: 24px;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+/*Tablet*/
+@include tablet {
+}
+
+/*Mobile*/
+@include mobile {
+}
+
+/*Mobile XS*/
+@include mobile-s {
 }
