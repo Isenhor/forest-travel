@@ -1,5 +1,5 @@
 .footer-widget {
-	padding-top: 10px;
+  padding-top: 10px;
   color: $light-text;
   font-family: $ptsans;
   &__title {
@@ -17,11 +17,24 @@
     margin-top: 15px;
   }
 
+  &__link {
+    transition: 0.3s;
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $dark-text;
+    }
+  }
+
   &--info {
     width: 170px;
   }
 
-  &--services,&--contacts {
+  &--services,
+  &--contacts {
     width: 270px;
   }
 }

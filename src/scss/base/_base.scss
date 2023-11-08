@@ -46,8 +46,8 @@ body {
 }
 .noscroll {
   overflow: hidden;
-  touch-action: none;
   -ms-touch-action: none;
+  touch-action: none;
   height: 100vh;
 }
 
@@ -124,8 +124,9 @@ select:-webkit-autofill:focus {
 }
 
 .container {
-  width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
 
   /*Tablet*/
   @include tablet {
@@ -165,4 +166,19 @@ select:-webkit-autofill:focus {
   font-family: $ptsans;
   font-size: 54px;
   font-weight: 700;
+
+  /*Tablet*/
+  @include tablet {
+    font-size: 50px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 42px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    font-size: 34px;
+  }
 }

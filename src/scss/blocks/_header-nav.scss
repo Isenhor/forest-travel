@@ -24,6 +24,18 @@ $active-color: #265847;
     }
   }
 
+  &__link {
+    transition: 0.3s;
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $dark-text;
+    }
+  }
+
   @include tablet {
     display: flex;
     justify-content: flex-end;
