@@ -156,14 +156,13 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-/*Tablet*/
-@include tablet {
+.none {
+  display: none;
 }
 
-/*Mobile*/
-@include mobile {
-}
-
-/*Mobile XS*/
-@include mobile-s {
+.h2 {
+  color: $dark-text;
+  font-family: $ptsans;
+  font-size: 54px;
+  font-weight: 700;
 }

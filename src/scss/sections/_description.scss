@@ -1,0 +1,33 @@
+$dark-color: #31405b;
+
+.description {
+  padding: 120px 0;
+  color: $dark-color;
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__row + &__row {
+    margin-top: 120px;
+  }
+}
+
+.description__row--reverse {
+	flex-direction: row-reverse;
+}
+
+.description-content {
+  width: 470px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}

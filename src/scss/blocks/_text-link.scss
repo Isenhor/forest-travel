@@ -1,0 +1,10 @@
+$text-link-color: #138ece;
+
+.text-link {
+  color: $text-link-color;
+  font-family: $ptsans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration-line: underline;
+}

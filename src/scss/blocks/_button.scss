@@ -1,0 +1,19 @@
+$btn-color: #0ac883;
+$btn-text-color: #fff;
+
+.button {
+  display: inline-block;
+  padding: 0 40px;
+  cursor: pointer;
+  height: 50px;
+
+  color: $btn-text-color;
+  font-family: $ptsans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+
+  background-color: $btn-color;
+  border-radius: 50px;
+  box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+}

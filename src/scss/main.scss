@@ -3,9 +3,12 @@
 
 //sections
 @import "sections/header";
+@import "sections/description";
 @import "sections/footer";
 
 // blocks
 @import "blocks/logo";
 @import "blocks/burger";
 @import "blocks/header-nav";
+@import "blocks/button";
+@import "blocks/text-link";
