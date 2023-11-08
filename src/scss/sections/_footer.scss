@@ -1,0 +1,26 @@
+$bgc-footer: #265847;
+
+.footer {
+  background-color: $bgc-footer;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.footer__row {
+  justify-content: space-between;
+
+  &-copy {
+    width: 270px;
+  }
+
+  &-widget {
+    gap: 30px;
+  }
+}
+
+.footer-copy {
+  font-family: $ptsans;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+}
