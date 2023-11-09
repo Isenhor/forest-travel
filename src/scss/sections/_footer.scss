@@ -1,9 +1,20 @@
 $bgc-footer: #265847;
 
 .footer {
+  color: $light-text;
   background-color: $bgc-footer;
   padding-top: 80px;
   padding-bottom: 90px;
+
+  /*Tablet*/
+  @include tablet {
+    padding: 50px 0;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    padding: 40px 0;
+  }
 }
 
 .footer__row {
@@ -11,16 +22,44 @@ $bgc-footer: #265847;
 
   &-copy {
     width: 270px;
+
+    /*Mobile*/
+    @include mobile {
+      margin-top: 50px;
+      width: auto;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      text-align: center;
+    }
   }
 
   &-widget {
     gap: 30px;
+
+    /*Mobile XS*/
+    @include mobile-s {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
+  }
+
+  /*Mobile*/
+  @include mobile {
+    flex-direction: column-reverse;
   }
 }
 
 .footer-copy {
   font-family: $ptsans;
-  color: #fff;
   font-size: 16px;
   line-height: 1.6;
+
+  /*Tablet*/
+  @include tablet {
+    font-size: 14px;
+  }
 }

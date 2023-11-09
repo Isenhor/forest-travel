@@ -10,5 +10,15 @@
 
   &--footer {
     margin-bottom: 26px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-bottom: 10px;
+    }
   }
 }

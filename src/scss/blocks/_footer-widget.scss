@@ -2,19 +2,39 @@
   padding-top: 10px;
   color: $light-text;
   font-family: $ptsans;
+
   &__title {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-bottom: 10px;
+    }
   }
 
   &__item {
     font-size: 18px;
-    font-weight: 400;
+
+    /*Mobile XS*/
+    @include mobile-s {
+      font-size: 16px;
+    }
   }
 
   &__item + &__item {
     margin-top: 15px;
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-top: 10px;
+    }
   }
 
   &__link {
@@ -31,10 +51,31 @@
 
   &--info {
     width: 170px;
+
+    /*Tablet*/
+    @include tablet {
+      width: 195px;
+    }
   }
 
   &--services,
   &--contacts {
     width: 270px;
+  }
+
+  &--services {
+    /*Tablet*/
+    @include tablet {
+      display: none;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      display: block;
+    }
+  }
+
+  @include mobile {
+    padding-top: 0;
   }
 }
