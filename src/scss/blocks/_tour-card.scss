@@ -1,0 +1,104 @@
+//tour-card bgc
+$free: #a6a6a6;
+$extreme: #c1b19b;
+$adventure: #66b0be;
+$tracking: #876f56;
+$exotic: #27695e;
+
+.tour-card {
+  width: 570px;
+
+  /*Tablet*/
+  @include tablet {
+    width: 420px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 570px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 290px;
+  }
+
+  &__img img {
+    width: 100%;
+    object-fit: cover;
+
+    /*Mobile*/
+    @include mobile {
+      height: 210px;
+    }
+  }
+
+  &__footer {
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+    background-color: rgba(199, 15, 15, 0.933);
+
+    /*Tablet*/
+    @include tablet {
+      height: 60px;
+      padding: 0 20px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      padding: 0 25px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      padding: 0 15px;
+      height: 50px;
+    }
+
+    &--free {
+      background-color: $free;
+    }
+    &--extreme {
+      background-color: $extreme;
+    }
+    &--adventure {
+      background-color: $adventure;
+    }
+    &--tracking {
+      background-color: $tracking;
+    }
+    &--exotic {
+      background-color: $exotic;
+    }
+  }
+
+  &__title {
+    color: $light-text;
+    font-family: $ptsans;
+    font-size: 28px;
+    font-weight: 700;
+
+    /*Tablet*/
+    @include tablet {
+      font-size: 24px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      font-size: 20px;
+    }
+  }
+}
+
+.tour-card--exotic {
+  & img {
+    @include tablet {
+      height: 510px;
+    }
+
+    @include mobile-s {
+      width: 290px;
+    }
+  }
+}

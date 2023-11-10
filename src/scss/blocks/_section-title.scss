@@ -1,0 +1,21 @@
+.section-title {
+  color: $dark-text;
+  font-family: $ptsans;
+  font-size: 54px;
+  font-weight: 700;
+
+  /*Tablet*/
+  @include tablet {
+    font-size: 50px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 42px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    font-size: 28px;
+  }
+}

@@ -17,15 +17,15 @@ $header-bgc: #265847;
 }
 
 .header-top {
-  width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
   justify-content: space-between;
   align-items: center;
 
   /*Tablet*/
   @include tablet {
     width: 900px;
-    padding: 0 15px;
   }
 
   /*Mobile*/
@@ -37,6 +37,14 @@ $header-bgc: #265847;
   @include mobile-s {
     width: 100%;
   }
+}
+
+.header-inner {
+  padding: 25px 0;
+  background-color: $header-bgc;
+  background-image: url("./../img/header/header-inner.webp");
+  height: 100px;
+  
 }
 
 .header-content {

@@ -142,6 +142,17 @@ select:-webkit-autofill:focus {
   @include mobile-s {
     width: 320px;
   }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Mobile XS*/
+    @include mobile-s {
+      width: 100%;
+    }
+  }
 }
 
 .flex {
@@ -180,5 +191,20 @@ select:-webkit-autofill:focus {
   /*Mobile XS*/
   @include mobile-s {
     font-size: 34px;
+  }
+}
+
+.inner {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  /*Tablet*/
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    padding: 40px 0;
   }
 }
