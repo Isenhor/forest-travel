@@ -5,6 +5,7 @@
 @import "sections/header";
 @import "sections/description";
 @import "sections/tours";
+@import "sections/article-page";
 @import "sections/footer";
 
 // blocks
@@ -16,3 +17,5 @@
 @import "blocks/footer-widget";
 @import "blocks/section-title";
 @import "blocks/tour-card";
+@import "blocks/page-text";
+@import "blocks/page-nav";

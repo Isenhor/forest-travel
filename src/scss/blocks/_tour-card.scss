@@ -89,6 +89,13 @@ $exotic: #27695e;
       font-size: 20px;
     }
   }
+
+  transition: 0.3s;
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .tour-card--exotic {

@@ -172,7 +172,7 @@ select:-webkit-autofill:focus {
   display: none;
 }
 
-.h2 {
+.heading-1 {
   color: $dark-text;
   font-family: $ptsans;
   font-size: 54px;
@@ -197,6 +197,7 @@ select:-webkit-autofill:focus {
 .inner {
   padding-top: 60px;
   padding-bottom: 100px;
+  background-color: $inner-bg;
 
   /*Tablet*/
   @include tablet {
@@ -207,4 +208,55 @@ select:-webkit-autofill:focus {
   @include mobile {
     padding: 40px 0;
   }
+}
+
+.inner--tracking {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  /*Tablet*/
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.h2,
+.h3,
+.h4 {
+  margin-bottom: 20px;
+  color: $dark-text;
+  font-family: $ptsans;
+  font-weight: 700;
+  line-height: 1.6;
+
+  /*Mobile XS*/
+  @include mobile-s {
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 26px;
+}
+
+.h4 {
+  font-size: 22px;
 }

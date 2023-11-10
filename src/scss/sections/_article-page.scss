@@ -1,0 +1,41 @@
+.article-page {
+  &__row {
+    gap: 130px;
+
+    /*Tablet*/
+    @include tablet {
+      gap: 30px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__content {
+    & > * + * {
+      margin-top: 30px;
+    }
+  }
+}

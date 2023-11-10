@@ -2,9 +2,10 @@ extends ../layouts/layout.pug
 
 block content
 	include ../blocks/_header-inner.pug
-	main.inner
-		include ../sections/_tours.pug
+	main.inner.inner--tracking
+		include ../sections/_tracking.pug
+		
 	include ../sections/_footer.pug
 	
 block variables
-	-var title = "Туры и направления";
+	-var title = "Трекинг походы";

@@ -1,0 +1,15 @@
+.page-text {
+  color: $dark-text;
+  font-size: 20px;
+  line-height: 1.6;
+
+  /*Tablet*/
+  @include tablet {
+    font-size: 18px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 16px;
+  }
+}
