@@ -1,0 +1,67 @@
+section.contacts 
+	.container 
+		.contacts__title
+			h1.section-title Контактная информация
+		.contacts__row.flex 
+			.contact-info
+				.contact-info__row 
+					.contact-info__subtitle
+						h3 Телефон и адрес
+					ul.contact-info__list 
+						li.contact-info__item 
+							a(href="#").contact-info__link
+								| +7 (905) 555-55-55
+						li.contact-info__item 
+							a(href="#").contact-info__link
+								| info@foresttravel.com
+						li.contact-info__item 
+							a(href="#").contact-info__link
+								| г. Москва, Рязанский проспект 54, офис 112.
+				.contact-info__row
+					.contact-info__subtitle
+						h3 Карта
+					.contact-info__map
+						iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A50e4c07f4687cb412d65204d90de7e0be2f202fd1146dfb69226f18944b8941d&source=constructor' width='100%' height='100%' frameborder='0')
+			.contact-form
+				form.form(action="#")
+					h3.form-title Заявка на подбор тура
+					.form-group
+						.form-group__title Личные данные
+						.form-group__row
+							input(type="text" placeholder="Введите имя").form-input
+						.form-group__row.flex
+							input(type="tel" placeholder="Телефон").form-input
+							input(type="email" placeholder="Email").form-input
+					.form-group
+						.form-group__title Количество человек для тура
+						label.radio-row
+							input(type="radio" name="people").real-radio
+							span.custom-radio
+							| 2 - 4 человека
+						label.radio-row
+							input(type="radio" name="people").real-radio
+							span.custom-radio
+							| 5 - 10 человек
+						label.radio-row
+							input(type="radio" name="people").real-radio
+							span.custom-radio
+							| 11 человек и более
+					.form-group
+						.form-group__title Какие направления вам интересны
+						label.checkbox-row
+							input(type="checkbox" name="tracking").real-checkbox
+							span.custom-checkbox
+							| Трекинг туры, походы по горам и пересеченной местности.
+						label.checkbox-row
+							input(type="checkbox" name="clibing").real-checkbox
+							span.custom-checkbox
+							| Восхождения на вершины.
+						label.checkbox-row
+							input(type="checkbox" name="exotic").real-checkbox
+							span.custom-checkbox
+							| Экзотические джунгли, вулканы.
+						label.checkbox-row
+							input(type="checkbox" name="mixed").real-checkbox
+							span.custom-checkbox
+							| Комбинированные: море, горы, города, лес.
+					button(type="submit").button.form-btn Отправить заявку
