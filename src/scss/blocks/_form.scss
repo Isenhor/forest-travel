@@ -7,6 +7,11 @@ $placeholder: #31405b80;
   padding: 40px;
   width: 630px;
 
+  /*Tablet*/
+  @include tablet {
+    width: 100%;
+      }
+
   /*Mobile*/
   @include mobile {
     padding: 30px;
@@ -160,7 +165,7 @@ $placeholder: #31405b80;
     display: block;
     position: absolute;
     content: "";
-	background-image: url("../img/icons/check.svg");
+    background-image: url("../img/icons/check.svg");
     width: 17px;
     height: 17px;
     left: 50%;
@@ -171,9 +176,9 @@ $placeholder: #31405b80;
 }
 
 .real-checkbox:checked + .custom-checkbox::before {
-	transform: translate(-50%, -50%) scale(1);
-  }
+  transform: translate(-50%, -50%) scale(1);
+}
 
-  .form-btn {
-	margin-top: 35px;
-  }
+.form-btn {
+  margin-top: 35px;
+}

@@ -1,4 +1,112 @@
 .contact-info {
+  flex-direction: column;
+  gap: 40px;
   width: 470px;
   color: $dark-text;
+  &__row {
+    &--address {
+      /*Tablet*/
+      @include tablet {
+        width: 420px;
+      }
+
+      /*Mobile*/
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &--map {
+      /*Tablet*/
+      @include tablet {
+        width: 420px;
+        height: 310;
+      }
+
+      /*Mobile*/
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    color: $dark-text;
+    font-size: 28px;
+    font-weight: 700;
+
+    /*Tablet*/
+    @include tablet {
+      font-size: 24px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    color: $link-color;
+  }
+
+  &__item + &__item {
+    margin-top: 15px;
+  }
+
+  &__link {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 0;
+    }
+
+    &--phone {
+      &::before {
+        background-image: url("../img/icons/phone.svg");
+      }
+    }
+    &--mail {
+      &::before {
+        background-image: url("../img/icons/mail.svg");
+      }
+    }
+
+    &--map {
+      &::before {
+        background-image: url("../img/icons/map.svg");
+      }
+    }
+  }
+
+  &__link {
+    padding-left: 39px;
+  }
+
+  &__map {
+    height: 345px;
+  }
+
+  /*Tablet*/
+  @include tablet {
+    width: 100%;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    gap: 30px;
+  }
 }

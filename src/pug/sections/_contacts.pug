@@ -3,21 +3,21 @@ section.contacts
 		.contacts__title
 			h1.section-title Контактная информация
 		.contacts__row.flex 
-			.contact-info
-				.contact-info__row 
+			.contact-info.flex
+				.contact-info__row.contact-info__row--address 
 					.contact-info__subtitle
 						h3 Телефон и адрес
 					ul.contact-info__list 
 						li.contact-info__item 
-							a(href="#").contact-info__link
+							a(href="#").contact-info__link.contact-info__link--phone
 								| +7 (905) 555-55-55
-						li.contact-info__item 
-							a(href="#").contact-info__link
+						li.contact-info__item
+							a(href="#").contact-info__link.contact-info__link--mail
 								| info@foresttravel.com
-						li.contact-info__item 
-							a(href="#").contact-info__link
+						li.contact-info__item
+							a(href="#").contact-info__link.contact-info__link--map
 								| г. Москва, Рязанский проспект 54, офис 112.
-				.contact-info__row
+				.contact-info__row.contact-info__row--map
 					.contact-info__subtitle
 						h3 Карта
 					.contact-info__map

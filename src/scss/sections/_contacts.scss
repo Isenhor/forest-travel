@@ -11,5 +11,16 @@
   &__row {
     justify-content: space-between;
     align-items: flex-start;
+
+    /*Tablet*/
+    @include tablet {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      gap: 30px;
+    }
   }
 }

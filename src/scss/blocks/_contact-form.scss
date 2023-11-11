@@ -1,2 +1,6 @@
 .contact-form {
+  /*Tablet*/
+  @include tablet {
+    width: 100%;
+  }
 }
